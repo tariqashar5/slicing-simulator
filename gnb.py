@@ -1,6 +1,6 @@
 class base_station:
 	
-	def __init__(self, x, y, coverage = 80, slice_ratio = None, max_bw):
+	def __init__(self, x, y,max_bw, coverage = 80, slice_ratio = None):
 		self.x = x
 		self.y = y
 		self.coverage = coverage
