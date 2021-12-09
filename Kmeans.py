@@ -15,3 +15,8 @@ def kdtree(clients, basestations):
 
 	res = tree.query(client_coor)
 	return res
+
+def init_tree(basestations):
+	bs_coor = [(b.x, b.y) for b in basestations]
+	tree = KDTree(bs_coor, leaf_size = 2)
+	return tree
